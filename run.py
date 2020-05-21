@@ -1,6 +1,4 @@
-from flask import Flask
-app = Flask(__name__)
+from app import manager
 
-@app.route('/')
-def hello_world():
-    return 'Olá meu bovino...'
+if __name__ == "__main__":
+    manager.run()
