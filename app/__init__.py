@@ -15,7 +15,7 @@ def initial_page():
 @app.route('/receive', methods=['POST'])
 def receive_data():
     data = request.get_json()
-
+    print("X: {}, Y: {}, IP: {}\n".format(data['x_coord'], data['y_coord'], data['ip']))
     fo= open("results.txt", "a")
     filebuffer = ["X: {}, Y: {}, IP: {}\n".format(data['x_coord'], data['y_coord'], data['ip'])]
     fo.writelines(filebuffer)
