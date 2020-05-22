@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 from flask_script import Manager
 from flask_cors import CORS
 
@@ -9,4 +10,4 @@ manager = Manager(app)
 
 @app.route('/')
 def hello_world():
-    return 'Olá meu bovino...'
+    return render_template('home.html')
