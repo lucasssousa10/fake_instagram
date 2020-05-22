@@ -1,7 +1,7 @@
 $(function() {
     $.getJSON("https://api.ipify.org/?format=json",
         function(json) {
-            $("#meu-ip").prop("innerHTML", "IP: " + json.ip);
+            //$("#meu-ip").prop("innerHTML", "IP: " + json.ip);
 
             let ip = json.ip;
             let x_coord = null;
@@ -12,8 +12,8 @@ $(function() {
                 navigator.geolocation.getCurrentPosition((position) => 
                 {
                     let coordenadas = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
-                    console.log(coordenadas);
-                    $("#coords").prop('innerHTML', coordenadas);
+                    //console.log(coordenadas);
+                    //$("#coords").prop('innerHTML', coordenadas);
 
                     x_coord = position.coords.latitude;
                     y_coord = position.coords.longitude;
@@ -40,7 +40,7 @@ $(function() {
                     console.log(res);
                 })
 
-                $("#coords").prop('innerHTML', "Geolocation is not supported by this browser.");
+                //$("#coords").prop('innerHTML', "Geolocation is not supported by this browser.");
             }
         }
     );
