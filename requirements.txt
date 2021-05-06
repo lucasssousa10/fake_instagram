@@ -4,7 +4,7 @@ astroid==2.3.3
 blinker==1.4
 Click==7.0
 Flask==1.0.2
-Flask-Cors==3.0.7
+Flask-Cors==3.0.9
 Flask-JWT==0.3.2
 Flask-JWT-Extended==3.15.0
 Flask-Mail==0.9.1
